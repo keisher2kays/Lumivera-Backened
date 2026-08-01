@@ -1,6 +1,6 @@
 
 
-// backend-lumivera/server.js
+
 const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 app.use(cors());
 
-// --- STRIPE WEBHOOK (Must be before express.json) ---
+
 app.post('/api/stripe-webhook', express.raw({ type: 'application/json' }), async (req, res) => {
   const sig = req.headers['stripe-signature'];
   let event;
@@ -96,8 +96,6 @@ app.get('/api/stock', async (req, res) => {
     res.status(500).json({ success: false, message: 'Error fetching stock' });
   }
 });
-
-// --- CREATE CHECKOUT SESSION ---
 app.post('/api/create-checkout-session', async (req, res) => {
   try {
     const { items, customerEmail, customerName, customerPhone, location, successUrl, cancelUrl } = req.body;
@@ -149,7 +147,7 @@ app.post('/api/create-checkout-session', async (req, res) => {
   }
 });
 
-// --- CHATBOT ---
+
 const activeHandovers = new Set();
 const roomMessageHistory = new Map();
 const roomBookingState = new Map();
