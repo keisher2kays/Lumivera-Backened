@@ -21,8 +21,8 @@ const packages = [
   {
     name: 'Standard Package',
     keywords: ['standard', 'standard package', 'medium', 'recommended', 'most popular'],
-    priceUSD: 2250,
-    priceGBP: 12000,
+    priceUSD: 3350,
+    priceGBP: 14000,
     spec: '6.2kW Kit',
     includes: ['WHC 6.2kW Hybrid Inverter', '48V 200Ah Lithium Battery', '9x 590W Mono Solar Panels', 'Full DC/AC Protection Box & Accessories'],
     bestFor: 'medium households managing regular load-shedding cycles',
@@ -30,11 +30,39 @@ const packages = [
   {
     name: 'Premium Package',
     keywords: ['premium', 'premium package', 'biggest', 'largest', 'top', 'commercial', 'estate'],
-    priceUSD: 5750,
-    priceGBP: 20000,
+    priceUSD: 6450,
+    priceGBP: 24500,
     spec: '11kW Kit',
     includes: ['11kW Flagship Hybrid Inverter', '10.2kWh/15.3kWh Lithium LiFePO4 Battery', '12x 590W Mono Solar Panels', 'Heavy Duty Protection Kit & Cables'],
     bestFor: 'heavy residential estates, boreholes, commercial self-sufficiency',
+  },
+   {
+    name: "Power 11kW Package",
+    bestFor: "Entry tier for heavy residential estates and small commercial self-sufficiency",
+     keywords: ['Entry', 'Power 11kW Package', 'self sufficiency', 'heavy residential', 'small', 'commercial', 'estate'],
+     priceUSD: 4300,
+    priceGBP: 17500,
+    spec: "11kW Kit — Basic",
+    includes: [
+      "11kW Hybrid Inverter",
+      "10.2kWh Lithium LifePO4 Battery",
+      "12 x 450W Mono Solar Panels",
+      "Standard Protection Kit & Cables"
+    ]
+  },
+    {
+    name: "Essential 6.2kW Package",
+    bestFor: "Entry point into whole-home coverage — lights, fridge, Wi-Fi, and small appliances",
+    keywords: ['whole-home', 'essential 6.2kW Package', 'lights', 'small appliances', 'backup', 'fridge', 'entertainment' , 'whole home', 'coverage', 'reasonable'],
+    priceUSD: 2150,
+    priceGBP: 9000,
+    spec: "6.2kW Kit — Basic",
+    includes: [
+      "WHC 6.2kW Hybrid Inverter",
+      "48V 100Ah Lithium Battery",
+      "9 x 450W Mono Solar Panels",
+      "Standard DC/AC Protection Box"
+    ]
   },
 ];
 
@@ -45,18 +73,18 @@ const products = [
   { name: 'Canadian Solar Monocrystalline Panel 545W', keywords: ['canadian solar', '545w'], priceUSD: 135 },
   { name: 'Bifacial Solar Panel 600W', keywords: ['bifacial', '600w panel'], priceUSD: 145 },
   { name: 'Off-Grid Solar Inverter 1kVA', keywords: ['1kva', 'off grid inverter', 'small inverter'], priceUSD: 180 },
-  { name: 'Hybrid Solar Inverter 5kVA', keywords: ['5kva', '5kva inverter', 'hybrid inverter'], priceUSD: 700 },
-  { name: 'Hybrid Solar Inverter 8kVA', keywords: ['8kva', '8kva inverter'], priceUSD: 1100 },
-  { name: '3-Phase Hybrid Inverter 12kVA', keywords: ['12kva', '3 phase', 'three phase'], priceUSD: 1550 },
-  { name: 'Industrial Hybrid Inverter 20kVA', keywords: ['20kva', 'industrial inverter'], priceUSD: 3300 },
+  { name: 'Hybrid Solar Inverter 5kVA', keywords: ['5kva', '5kva inverter', 'hybrid inverter','small','smallest'], priceUSD: 700 },
+  { name: 'Hybrid Solar Inverter 8kVA', keywords: ['8kva', '8kva inverter', 'reasonable'], priceUSD: 1100 },
+  { name: '3-Phase Hybrid Inverter 12kVA', keywords: ['12kva', '3 phase', 'three phase','medium'], priceUSD: 1550 },
+  { name: 'Industrial Hybrid Inverter 20kVA', keywords: ['20kva', 'industrial inverter' , 'biggest' ,'largest'], priceUSD: 3300 },
   { name: 'Lithium Battery 5kWh (100Ah)', keywords: ['5kwh', '100ah', 'small battery'], priceUSD: 480 },
   { name: 'Lithium Battery 10kWh (200Ah)', keywords: ['10kwh', '200ah'], priceUSD: 850 },
   { name: 'Lithium Battery 15kWh (300Ah)', keywords: ['15kwh', '300ah'], priceUSD: 1350 },
   { name: 'Lithium Battery 20kWh (400Ah)', keywords: ['20kwh', '400ah', 'biggest battery', 'industrial battery'], priceUSD: 3200 },
-  { name: 'Inspection Quadcopter Drone', keywords: ['inspection drone', 'quadcopter'], priceUSD: 850 },
-  { name: 'Agricultural Spraying Drone 16L', keywords: ['spraying drone', '16l drone', 'crop drone'], priceUSD: 1650 },
-  { name: 'Mapping & Survey Drone', keywords: ['mapping drone', 'survey drone', 'gps drone'], priceUSD: 2200 },
-  { name: 'Heavy-Duty Spraying Drone 25kg', keywords: ['25kg drone', 'heavy duty drone'], priceUSD: 2800 },
+  { name: 'Inspection Quadcopter Drone', keywords: ['inspection drone', 'quadcopter','drones'], priceUSD: 850 },
+  { name: 'Agricultural Spraying Drone 16L', keywords: ['spraying drone', '16l drone', 'crop drone','drones'], priceUSD: 1650 },
+  { name: 'Mapping & Survey Drone', keywords: ['mapping drone', 'survey drone', 'gps drone','drones'], priceUSD: 2200 },
+  { name: 'Heavy-Duty Spraying Drone 25kg', keywords: ['25kg drone', 'heavy duty drone','drones'], priceUSD: 2800 },
   { name: 'Installation & Mounting Kit', keywords: ['mounting kit', 'installation kit', 'rails'], priceUSD: 225 },
   { name: 'MPPT Charge Controller 60A', keywords: ['mppt', 'charge controller'], priceUSD: 95 },
   { name: 'Solar Cables & Combiner Box', keywords: ['combiner box', 'solar cables'], priceUSD: 65 },
@@ -64,8 +92,6 @@ const products = [
   { name: 'DC Circuit Breakers (set of 4)', keywords: ['circuit breaker', 'dc breaker'], priceUSD: 35 },
   { name: 'Battery Monitor Display', keywords: ['battery monitor', 'monitor display'], priceUSD: 60 },
   { name: 'LED Solar Lighting Kit', keywords: ['led kit', 'lighting kit', 'led lights'], priceUSD: 30 },
-  
-  /* Mining & Industrial Lighting */
   { name: 'KD5 (KL8LM) Premium Caplamp', keywords: ['kd5', 'kl8lm', 'premium caplamp', 'miner lamp', 'caplamp'], priceUSD: 125 },
   { name: 'Lunar Plus Miner Caplamp', keywords: ['lunar plus', 'lunar plus caplamp', 'miner caplamp'], priceUSD: 120 },
   { name: 'KL4LM Mining Torch with Charger', keywords: ['kl4lm', 'mining torch', 'kl4lm torch'], priceUSD: 45 },
@@ -103,7 +129,7 @@ const faqs = [
   {
     keywords: ['installment', 'installments', 'pay monthly', 'payment plan', 'monthly payment', 'deposit', 'instalment'],
     answer: () =>
-      `Yes, we do! We offer a 3-month installment plan on any package or product. A 12% markup is applied to the base price to cover the plan. ` +
+      `Yes, we do! We offer a 3-month installment plan on any package. A 12% markup is applied to the base price to cover the plan. ` +
       `For example — Standard Package: base $2,250, installment total ≈ $${calculateInstallment(2250).total}, so about $${calculateInstallment(2250).monthly}/month over 3 months. ` +
       `Equipment is dispatched and installation is scheduled right after your 2nd payment. Want the breakdown for a specific package?`,
   },
@@ -115,7 +141,7 @@ const faqs = [
       'pay by card', 'bank transfer', 'which cards', 'accepted cards'
     ],
     answer: () =>
-      `Yes, absolutely — payment is quick and secure. We accept online payments through our Paynow gateway, using EcoCash, Visa, or Mastercard — ` +
+      `Yes, absolutely — payment is quick and secure. We accept online payments through our Paynow gateway, using Visa, or Mastercard — ` +
       `and Paynow also supports most other major bank cards, so if yours isn't Visa or Mastercard it will likely still work. ` +
       `Your card details are never stored on our end. Would you like help placing an order, or do you have a question about a specific package?`,
   },
